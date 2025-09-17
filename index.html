@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Velora café — Cafe</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top navigation -->
+  <div class="topbar" role="navigation" aria-label="Main">
+    <div class="nav">
+      <div class="brand">
+        
+        <h1>Velora café</h1>
+       
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#visit">visit us</a>
+        </nav>
+
+       <button class="hamburger" id="hambtn" aria-expanded="false" aria-controls="mobileDrawer">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="home" class="hero" role="banner">
+    <!-- Replace hero.jpg with your screenshot/hero image -->
+    <div class="hero__bg" style="background-image:url('image/hero.jpg');"></div>
+
+    <div class="hero-inner">
+      <h2>Velora café</h2>
+      <p>Welcome to Velora café — where every cup feels like home</p>
+      <a class="cta" href="#menu" aria-label="Explore our menu">Explore Our Menu</a>
+    </div>
+  </div>
+
+  <main>
+   <section id="menu" class="menu-section">
+  <div class="container">
+    <h2 class="section-title">Our Menu</h2>
+    <p class="section-sub">Freshly brewed and baked daily</p>
+
+    <div class="menu-grid">
+      
+      <!-- Coffee Column -->
+      <div class="menu-column">
+        <h3 class="menu-heading">Coffee</h3>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Espresso.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Espresso</span>
+              <span class="menu-price">$3.50</span>
+            </div>
+            <p class="menu-desc">Rich and intense, served as a single shot.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Cappuccino.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Cappuccino</span>
+              <span class="menu-price">$3.10</span>
+            </div>
+            <p class="menu-desc">Perfect balance of espresso and milk.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Americano.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Americano</span>
+              <span class="menu-price">$2.80</span>
+            </div>
+            <p class="menu-desc">Espresso with hot water.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Mocha.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Mocha</span>
+              <span class="menu-price">$3.80</span>
+            </div>
+            <p class="menu-desc">Espresso, chocolate and steamed milk.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/matcha.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">matcha</span>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p class="menu-desc">Japanese Matcha blended with almond milk & vanilla.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--  Refreshers & Signatures-->
+     
+      <div class="menu-column">
+        <h3 class="menu-heading">Refreshers & Signatures</h3>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/CitrusSparkle.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Citrus Sparkle</span>
+              <span class="menu-price">$4.20</span>
+            </div>
+            <p class="menu-desc">Lemon, orange & sparkling water.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/BerryHibiscusIcedTea.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Berry Hibiscus Iced Tea</span>
+              <span class="menu-price">$3.60</span>
+            </div>
+            <p class="menu-desc">Fruity, floral, and vibrant.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/TropicalSmoothie.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Tropical Smoothie</span>
+              <span class="menu-price">$4.80</span>
+            </div>
+            <p class="menu-desc">Mango, pineapple & coconut.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/RoseLemonade.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Rose Lemonade</span>
+              <span class="menu-price">$3.90</span>
+            </div>
+            <p class="menu-desc">Lemon with a floral twist.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/ColdBrewFusion.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Cold Brew Fusion</span>
+              <span class="menu-price">$4.65</span>
+            </div>
+            <p class="menu-desc">Smooth cold brew with a hint of vanilla.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastries Column -->
+      <div class="menu-column">
+        <h3 class="menu-heading">Pastries</h3>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Croissant.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Croissant</span>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p class="menu-desc">Flaky and buttery, baked fresh every morning.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Cheesecake.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Cheesecake</span>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p class="menu-desc">Creamy New York-style cheesecake.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/AppleStrudel.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Apple Strudel</span>
+              <span class="menu-price">$3.75</span>
+            </div>
+            <p class="menu-desc">Traditional Austrian pastry with apples.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/Tiramisu.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Tiramisu</span>
+              <span class="menu-price">$3.75</span>
+            </div>
+            <p class="menu-desc">Classic Italian coffee dessert.</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="thumb" style="background-image:url('image/ChocolateMuffin.jpeg');"></div>
+          <div class="menu-details">
+            <div class="menu-info">
+              <span class="menu-item">Chocolate Muffin</span>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p class="menu-desc">Moist, rich and full of chocolate chips.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- About -->
+   <section id="about" class="about-section">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 class="section-title">About Us</h2>
+          <p class="lead">Nestled in the heart of the city, Velora café is more than just a coffee shop — it's a sanctuary where the aroma of freshly roasted beans meets the warmth of great company.</p>
+          <p>Our story began with a simple desire to create a cozy, modern space that celebrates both specialty coffee and comforting pastries. We source beans responsibly, roast to highlight nuanced flavors, and craft each cup with care.</p>
+
+          <ul class="about-list">
+            <li><strong>Passionate Baristas</strong> — Dedicated to delivering the best cup every time.</li>
+            <li><strong>Sustainable Practices</strong> — We partner with ethical growers and use recyclable packaging.</li>
+            <li><strong>Community Hub</strong> — A welcoming place to meet, work, or relax.</li>
+          </ul>
+        </div>
+
+        <div class="about-image">
+          <img src="image/café.jpeg" alt="Inside Brew Haven cafe" />
+        </div>
+      </div>
+    </section>
+    <!-- Visit Us Section -->
+<section id="visit" class="visit-section">
+  <div class="container">
+    <h2 class="section-title center-title">Visit Us</h2>
+    <p class="lead">
+      Velora café welcomes you every day with freshly brewed coffee and warm pastries.
+    </p>
+
+    <div class="visit-inner">
+      <!-- Text Column -->
+      <div class="visit-text">
+        <ul class="visit-info">
+          <li>📍 <strong>Address:</strong>123 Main Street</li>
+          <li>📞 <strong>Phone:</strong> +1 234 567 890</li>
+        </ul>
+
+        <div class="visit-hours">
+          <div class="hour-card">🕒 Mon – Fri: <span>8:00 AM – 9:00 PM</span></div>
+          <div class="hour-card">🕒 Sat – Sun: <span>9:00 AM – 11:00 PM</span></div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="visit-socials">
+          <a href="#" class="social-btn">Facebook</a>
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">Twitter</a>
+        </div>
+      </div>
+
+      <!-- Map Column -->
+      <div class="visit-map">
+        <h3 class="map-title">📍 Velora café – City Center</h3>
+        <iframe
+          src="https://www.google.com/maps?q=51.5079,-0.1283&hl=es;z=14&output=embed"
+          width="100%"
+          height="220"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+
+  <!-- Mobile drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="menu" aria-hidden="true">
+    <a href="#home" role="menuitem">Home</a>
+    <a href="#menu" role="menuitem">Menu</a>
+    <a href="#about" role="menuitem">About</a>
+    <a href="#visit" role="menuitem">visit us</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
